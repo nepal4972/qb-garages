@@ -9,31 +9,33 @@ This is a qb-garages script that uses the radialmenu to retrieve and park vehicl
 
 Dependencies:
 
-1. qb-radialmenu
-2. qb-core
+  1. qb-radialmenu
+  2. qb-core
 
 
 Installation:
 
 Drag 'n Drop replace for qb-garages.
 
-1. Delete qb-garages.
-2. Drag the downloaded qb-garages folder into the [qb] folder.
-3. If you want to use the latest features, apply patch1.sql to your DB
+  1. Delete qb-garages.
+  2. Drag the downloaded qb-garages folder into the [qb] folder.
+  3. If you want to use the latest features, apply patch1.sql to your DB
 
 
 Features:
 
+  1. Public Garages
+  2. House Garages
+  3. Gang Garages
+  4. Job Garages
+  5. Depot Garages
+  6. Blips and names
+  7. Custom DrawText
+  8. Water Garages
+  9. Aircraft Garages
 
-1. Public Garages
-2. House Garages
-3. Gang Garages
-4. Job Garages
-5. Depot Garages
-6. Blips and names
-7. Custom DrawText
-8. Water Garages
-9. Aircraft Garages
+
+
 
 
 
