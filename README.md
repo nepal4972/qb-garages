@@ -1,38 +1,57 @@
-qb-garages
-ATENTION: THIS SCRIPT USES THE LATEST VERSION OF THE RADIALMENU AND QB-CORE
+ATENTION:
+
+
+
+THIS SCRIPT USES THE LATEST VERSION OF THE RADIALMENU AND QB-CORE
 
 This is a qb-garages script that uses the radialmenu to retrieve and park vehicles. Almost everything is fully customizable to the last bit!
 
-For screenshots scroll down
 
-Dependencies
-qb-radialmenu
-qb-core
-Installation
+Dependencies:
+
+1. qb-radialmenu
+2. qb-core
+
+
+Installation:
+
 Drag 'n Drop replace for qb-garages.
 
-Delete qb-garages.
-Drag the downloaded qb-garages folder into the [qb] folder.
-If you want to use the latest features, apply patch1.sql to your DB
-Features
-Public Garages
-House Garages
-Gang Garages
-Job Garages
-Depot Garages
-Blips and names
-Custom DrawText
-Water Garages
-Aircraft Garages
+1. Delete qb-garages.
+2. Drag the downloaded qb-garages folder into the [qb] folder.
+3. If you want to use the latest features, apply patch1.sql to your DB
 
+
+Features:
+
+
+1. Public Garages
+2. House Garages
+3. Gang Garages
+4. Job Garages
+5. Depot Garages
+6. Blips and names
+7. Custom DrawText
+8. Water Garages
+9. Aircraft Garages
+
+
+
+
+
+Config Example:
 
 
 --Dont Use This This is only for Professionals--
+
+
  --No need to use this this will create error--
 
-Config Example
-Everything that says optional can be omitted.
+
  -- GARAGE CONFIGURATION EXAMPLE :
+ 
+ 
+ 
     ['somegarage'] = {
         ['Zone'] = {
             ['Shape'] = { -- Create a polyzone by using '/pzcreate poly', '/pzadd' and '/pzfinish' or '/pzcancel' to cancel it. the newly created polyzone will be in txData/QBCoreFramework_******.base/polyzone_created_zones.txt
@@ -78,7 +97,21 @@ Everything that says optional can be omitted.
     
     
     
-    --parking vehicle using target--
+    
+    
+ parking vehicle using target
+ 
+ 
+ 
+ --Dont Use This This is only for Professionals--
+ 
+ 
+ 
+ --No need to use this this will create error--
+    
+    
+    
+    
     
     
     local garageName = 'pdgarage'
@@ -102,25 +135,20 @@ Everything that says optional can be omitted.
     })
     
     
-    --improved phone tracking--
     
     
-    Replace This
     
-    RegisterNUICallback('track-vehicle', function(data, cb)
-    local veh = data.veh
-    if findVehFromPlateAndLocate(veh.plate) then
-        QBCore.Functions.Notify("Your vehicle has been marked", "success")
-    else
-        QBCore.Functions.Notify("This vehicle cannot be located", "error")
-    end
-    cb("ok")
-end)
+    
+  --improved phone tracking--
+  
+  
+    
 
-
-WITH
-
-RegisterNUICallback('track-vehicle', function(data, cb)
+EDIT THIS: 
+    
+    
+    
+     RegisterNUICallback('track-vehicle', function(data, cb)
     local veh = data.veh
     if veh.state == 'In' then
         if veh.parkingspot then
@@ -133,16 +161,29 @@ RegisterNUICallback('track-vehicle', function(data, cb)
         QBCore.Functions.Notify("This vehicle cannot be located", "error")
     end
     cb("ok")
-end)
-   
-   
-   
- --ONLY FOR loaf_housing--
- 
- 
- exports('HasHouseKey', function(propertyId)
+    end)
+    
+    
+--ONLY FOR loaf_housing--   
+    
+    
+    
+    
+     exports('HasHouseKey', function(propertyId)
     local stringId = tostring(propertyId)
     local data = cache.ownedHouses[stringId] or cache.houses[stringId]
     return exports['loaf_keysystem']:HasKey(GetKeyName(propertyId, data.id))
 end)
    
+
+
+
+
+
+   
+   
+   
+
+ 
+ 
+
