@@ -1,12 +1,10 @@
-Insta For Help : https://www.instagram.com/s.a.u.g.a.t.n.e.p.a.l/
+Instagram For Help : https://www.instagram.com/s.a.u.g.a.t.n.e.p.a.l/
 
-
-Discord : https://discord.gg/PaDuyF9w76
 
 
 ATENTION:
 
-
+Discord : https://discord.gg/PaDuyF9w76
 
 THIS SCRIPT USES THE LATEST VERSION OF THE RADIALMENU AND QB-CORE
 
