@@ -1,5 +1,7 @@
-Discord For Help : https://discord.gg/PaDuyF9w76
+Insta For Help : https://www.instagram.com/s.a.u.g.a.t.n.e.p.a.l/
 
+
+Discord : https://discord.gg/PaDuyF9w76
 
 
 ATENTION:
