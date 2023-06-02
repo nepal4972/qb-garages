@@ -13,7 +13,7 @@ This is a qb-garages script that uses the radialmenu to retrieve and park vehicl
 
 Dependencies:
 
-  1. qb-radialmenu
+  1. qb-radialmenu : https://github.com/nepal4972/qb-radialmenu
   2. qb-core
 
 
